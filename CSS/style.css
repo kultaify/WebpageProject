@@ -1,7 +1,18 @@
+body {
+  background:#DB7093;
+}
+#wrap {
+  width:700px;
+  margin:0px auto 15 px auto;
+  font-family:Georgia;
+  font-size:12px;
+  color: #DB7093;
+}
+
 /" Header "/
 #header {
   height:242PX;
   margin:0px auto 15 px auto;
   font-family:Georgia;
-  color: #DB7093;
+  color:#000000;
 }
