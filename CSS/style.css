@@ -73,10 +73,10 @@ body {
 	background:#efefef;
 	display:block; 
 	margin:5px;
-	font:Georgia, "Times New Roman", Times, serif; 
+	font:Georgia; 
 	font-style:italic;}
 h1, h2, h3, h4, h5 {
-	color:#A52A2A;
+	color:#000000;
 	font-weight:bold;
 	font-family: Georgia;
 }
