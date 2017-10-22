@@ -6,7 +6,7 @@ body {
   margin:0px auto 15 px auto;
   font-family:Georgia;
   font-size:12px;
-  color: #DB7093;
+  color:#DB7093;
 }
 
 /" Header "/
@@ -16,3 +16,42 @@ body {
   font-family:Georgia;
   color:#000000;
 }
+
+/"Header menu"/
+#topmenu {
+  display:block;
+  list-style:none;
+  padding:0 0px 0px 278px;
+  float: right;
+  width: 415px;
+}
+
+#topmenu li {
+  display:inline;
+}
+
+#topmenu a {
+  display:block;
+  float:left;
+  height:28px;
+  margin:0px 0px 0px0px;
+  text-decoration:none;
+  padding:9px 15px 0px 15px;
+  text-align:center;
+}
+
+#topmenu a, #topmenu a:visited, #topmenu a:active {
+  color:#87CEFA;
+}
+
+#topmenu a:hover{
+  color:#000000;
+  background-color: #FFC0CB;
+}
+
+#topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
+  color:#000000;
+  background-color:#C71585;
+}
+
+
