@@ -9,12 +9,12 @@ body {
   color:#000000;
 }
 
-/" Header "/
+/*Header*/
+
 #header {
-  height:242PX;
-  margin:0px auto 15 px auto;
-  font-family:Georgia;
-  color:#000000;
+  height:242px;
+  background:url("https://github.com/dipaish/www_dkc/blob/master/images/header.png?raw=true") no-repeat left top;
+  clear: both;
 }
 
 #topbar {
