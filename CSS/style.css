@@ -60,7 +60,7 @@ body {
 }
 #mainpage {
 	width:700px;
-	float:left;
+	float:center;
 	padding:5px 5px 5px 0px;
 	height:auto
 }
