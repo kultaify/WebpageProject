@@ -24,6 +24,7 @@ body {
   padding:0 0px 0px 278px;
   float: right;
   width: 415px;
+  position:fixed;
 }
 
 #topmenu li {
