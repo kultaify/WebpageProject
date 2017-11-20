@@ -46,7 +46,7 @@ body {
 
 #topmenu a:hover{
   color:#000000;
-  background-color: #FFC0CB;
+  background-color: #FF69B4;
 }
 
 #topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
