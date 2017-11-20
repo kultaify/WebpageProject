@@ -13,7 +13,7 @@ body {
 
 #header {
   height:242px;
-  background:url("https://github.com/dipaish/www_dkc/blob/master/images/header.png?raw=true") no-repeat left top;
+  background:url("https://github.com/kultaify/WebpageProject/blob/master/Images/cherrytree.jpg?raw=true") no-repeat left top;
   clear: both;
 }
 
@@ -21,7 +21,7 @@ body {
 	height:78px;
 }
 
-/"Header menu"/
+/*Header menu*/
 #topmenu {
   display:block;
   list-style:none;
