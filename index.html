@@ -4,6 +4,29 @@
   <head>
     <title>Webpage</title>
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    
+    <script>
+      function validateForm()
+      {
+      if (document.forms["myForm"]["name"].value==null || document.forms["myForm"]["name"].value=="")
+      {
+      alert("Please give a name.");
+      return false;
+      }
+      if (document.forms["myForm"]["phone"].value==null || document.forms["myForm"]["phone"].value=="")
+      {
+      alert("Phone must be filled out");
+      return false;
+      }
+      if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value=="")
+      {
+      alert("Email must be filled out");
+      return false;
+      }
+    return true;
+    }
+  </script>
+    
   </head>
   <body>
     <div id="wrap">     
@@ -31,8 +54,7 @@
 <div id="mainpage">
       
     <h1 id="main">Hello!</h1>
-    <p>This is where my website will be.
-    </p>
+    <p>This is my website project for the WWW course. As it is done mainly for practising purposes, please disregard the random content.</p>
     <a href="https://www.linkedin.com/in/lauraalaine/" target="_blank"> Link to my LinkedIn profile.</a> <br>
     <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAhmAAAAJDhhMTg5OWMyLTNmZTEtNDBlMy04ODc2LWE4YmM5NTNiMTNmNg.jpg" alt="Picture of me"> <br>
     
@@ -112,7 +134,12 @@
     </form>
   
   <h2 id="form">Form validation</h2>
-  <p>Add validation stuff here.</p>
+  <form name="myForm" onsubmit="return validateForm()" >
+    Name: <input type="text" name="name" /><br/>
+    Phone: <input type="text" name="phone" /><br/>
+    E-mail: <input type="text" name="email" /><br/>
+    <input type="submit" value="Click to Submit" />
+   </form>
     
     <div id="footer">
     <p>Copyright &copy;
