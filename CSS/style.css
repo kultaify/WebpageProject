@@ -119,7 +119,7 @@ border-spacing: 5px;
 }
 
 table, th, td {
-border:1px solid red;
+border:1px double red;
 padding: 15px;	
 }
 th {
@@ -128,7 +128,7 @@ text-align: left;
 
 table#t1 {
 width: 75%;
-background-color: yellow;
+background-color: white;
 border: 1px;
 }
 
