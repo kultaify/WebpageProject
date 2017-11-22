@@ -2,6 +2,7 @@ body {
   background:#FFC0CB;
 }
 #wrap {
+  display: flex;
   width:700px;
   margin:0px auto 15 px auto;
   font-family:Georgia;
