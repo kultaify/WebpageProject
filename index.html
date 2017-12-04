@@ -173,14 +173,15 @@
               alert("Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude);
            }    
       
-      function showPosition(position) {
-        var latlon = position.coords.latitude + "," + position.coords.longitude;
-
-        var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_:KEY";
-
-         document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-        }
+     function initMap() {
+       var location = {position.coords.latitude, position.coords.longitude};
+       var map = new google.maps.Map(document.getElementById("map")), {
+           zoom: 4,
+           center: location});
+     }
      </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key="AIzaSyC3kOPhc0LobeLZNen0kqZp07NiXa0AVpM&callback=initMap"></script>
     
     <div id="footer">
     <p>Laura Laine &copy;
