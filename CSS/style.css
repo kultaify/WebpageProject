@@ -13,6 +13,7 @@ body {
 
 #header {
   height:242px;
+  width: 415px;
   background:url("https://github.com/kultaify/WebpageProject/blob/master/Images/cherrytree.jpg?raw=true") no-repeat left top;
   clear: both;
 }
@@ -22,7 +23,7 @@ body {
   display:inline-block;
   list-style:none;
   padding:0 0px 0px 278px;
-  float: right;
+  float: left;
   width: 415px;
   background-color:white;
   position:fixed;
