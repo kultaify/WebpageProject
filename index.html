@@ -159,9 +159,23 @@
     <h2 id="drag">Drag & Drop</h2>
     
     <h2 id="map">Map</h2>
+    <p>Click to see where you are!</p>
+    <button> onclick="showLocation()">Click</button>
+    <script>
+        function showLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            alert("Your browser doesn't support geolocation.);
+          }
+        }
+         function showPosition(position) {
+              alert("Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude);
+            }
+     </script>
     
     <div id="footer">
-    <p>Copyright &copy;
+    <p>Laura Laine &copy;
     <script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script>
     </p>
    </div>
