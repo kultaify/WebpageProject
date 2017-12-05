@@ -21,7 +21,7 @@ body {
 #topmenu {
 	display:inline-block;
 	list-style:none;
-	padding:0px 0px 0px 278px;
+	padding:0px 0px 0px 0px;
 	float: left;
 	width: 685px;
 	background-color:white;
