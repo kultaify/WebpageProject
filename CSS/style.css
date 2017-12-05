@@ -12,10 +12,12 @@ body {
 /*Header*/
 
 #header {
-	background:url("https://github.com/kultaify/WebpageProject/blob/master/Images/cherrytree.jpg?raw=true") left top;
+	background:url("https://github.com/kultaify/WebpageProject/blob/master/Images/cherrytree.jpg?raw=true");
 	background-repeat:no-repeat;
+	align:middle;
 	clear: both;
 	height:240px;
+	width:505px;
 }
 
 /*Header menu*/
