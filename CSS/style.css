@@ -30,7 +30,8 @@ body {
 }
 
 #topmenu li {
-  display:inline;
+  	display:inline;
+	text-align:center;
 }
 
 #topmenu a {
