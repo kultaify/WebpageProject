@@ -19,13 +19,14 @@ body {
 
 /*Header menu*/
 #topmenu {
-  display:inline-block;
-  list-style:none;
-  padding:0px 0px 0px 278px;
-  float: left;
-  width: 685px;
-  background-color:white;
-  position:fixed;
+	display:inline-block;
+	list-style:none;
+	padding:0px 0px 0px 278px;
+	float: left;
+	width: 685px;
+	background-color:white;
+	position:fixed;
+	text-align: center;
 }
 
 #topmenu li {
