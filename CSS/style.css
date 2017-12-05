@@ -26,12 +26,12 @@ body {
 	width: 685px;
 	background-color:white;
 	position:fixed;
-	text-align: center;
+	text-align:left;
 }
 
 #topmenu li {
   	display:inline;
-	text-align:center;
+	text-align:left;
 }
 
 #topmenu a {
