@@ -1,5 +1,5 @@
 body {
-  background:#FFC0CB;
+	background-image: linear-gradient(#FFFFFF, #FFC0CB)
 }
 #wrap {
   width:700px;
