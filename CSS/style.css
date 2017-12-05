@@ -13,7 +13,7 @@ body {
 
 #header {
 	width:700px
-	background:url("https://github.com/kultaify/WebpageProject/blob/master/Images/cherrytree.jpg?raw=true") no-repeat left top;
+	background-image:url("https://github.com/kultaify/WebpageProject/blob/master/Images/cherrytree.jpg?raw=true") no-repeat left top;
 	background-size:cover;
 	clear: both;
 }
