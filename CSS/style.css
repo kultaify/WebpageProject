@@ -12,7 +12,8 @@ body {
 /*Header*/
 
 #header {
-	background:url("https://github.com/kultaify/WebpageProject/blob/master/Images/cherrytree.jpg?raw=true") no-repeat left top;
+	background:url("https://github.com/kultaify/WebpageProject/blob/master/Images/cherrytree.jpg?raw=true") left top;
+	background-repeat:no-repeat;
 	clear: both;
 	height:240px;
 }
