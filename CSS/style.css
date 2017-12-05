@@ -126,16 +126,15 @@ h1, h2, h3, h4, h5 {
 
 table {
 border-spacing: 5px;
-background-color: #FFFFFF;
+
 }
 
 table, th, td {
 border:1px double red;
-padding: 15px;	
+padding: 15px;
+background-color: #FFFFFF;
 }
-th {
-text-align: left;
-}
+
 
 table#t1 {
 width: 75%;
