@@ -138,14 +138,13 @@ text-align:center;
 {
 	height: 250px;
 	margin: 50px auto 0;
-	text-align: left;
+	text-align: center;
 }
 
 #DROP
 {
 	width: 259px;
 	height: 194px;
-	padding: 5px;
 	background-color: #FFF;
 	border: 1px solid #000;
 	margin: 20px auto 0px;
