@@ -170,8 +170,9 @@
      
     
     <h2 id="map">Map</h2>
+    <div id="mapError"></div>
     <p>Click to see where you are!</p>
-    <button onclick="showLocation()">Click</button>
+    <button onclick="getLocation()">Click</button>
     
     <div id="footer">
     <p>Laura Laine &copy;
@@ -184,25 +185,55 @@
       
       
   <!--Map script-->  
-  <script>
-        function showLocation() {
-          if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-          } else {
-            alert("Your browser doesn't support geolocation.");
-          }
-        }
-         function showPosition(position) {
-              alert("Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude);
-           }    
-      
-     function initMap() {
-       var location = {position.coords.latitude, position.coords.longitude};
-       var map = new google.maps.Map(document.getElementById("map")), {
-           zoom: 4,
-           center: location});
-     }
-     </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_82rirwooqEweeBOwCeRu0hORGGpelZM&callback=initMap" async defer>
+       </script>
+         
+<script>
+function getLocation() {
+	var x = document.getElementById('mapError');
+	
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else { 
+        x.innerHTML = "Your browser doesn't support geolocation.";
+    }
+}
+function showPosition(position) {
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
+    var latlon = new google.maps.LatLng(lat, lon)
+    var mapholder = document.getElementById('map')
+    mapholder.style.height = '400px';
+    mapholder.style.width = '500px';
+    var myOptions = {
+    center:latlon,zoom:14,
+    mapTypeId:google.maps.MapTypeId.ROADMAP,
+    mapTypeControl:false,
+    navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+    }
+    
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+}
+function showError(error) {
+	var x = document.getElementById('mapError');
+	
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User didn't approve geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Cannot access location information."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request for user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
       
   <!--D&D script-->
                                   
