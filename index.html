@@ -210,7 +210,7 @@ function showPosition(position) {
     navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
     }
     
-    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var map = new google.maps.Map(document.getElementById('maptitle'), myOptions);
     var marker = new google.maps.Marker({position:latlon,map:map,title:"I know where you live now."});
 }
 function showError(error) {
