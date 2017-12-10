@@ -150,3 +150,8 @@ text-align:center;
 	border: 1px solid #000;
 	margin: 20px auto 0px;
 }
+
+#map {
+	width:400px;
+	height:400px;
+}
