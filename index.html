@@ -48,9 +48,9 @@
             </li>
             <li><a href="#audio">Audio</a>
             </li>
-            <li><a href="#map">Map</a>
-            </li>
             <li><a href="#drag">Drag and Drop</a>
+            </li>
+            <li><a href="#map">Map</a>
             </li>
           </ul> <!--topmenu-->
         </div> <!--menus-->
@@ -162,29 +162,22 @@
     <div id="DROP" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <img id="drag1" src="Images/pinkheart.png" draggable="true" ondragstart="drag(event)" width="259px" height="194px">
     </div>
-     
-    <script>
-    function allowDrop(ev) {
-    ev.preventDefault();
-    }
-
-    function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-    }
-
-    function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-    }
-    </script>
-          
-    <br>
     
     <h2 id="map">Map</h2>
     <p>Click to see where you are!</p>
     <button onclick="showLocation()">Click</button>
-    <script>
+    
+    <div id="footer">
+    <p>Laura Laine &copy;
+    <script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script>
+    </p>
+   </div> <!--footer-->
+      </div> <!--mainpage-->
+  </div> <!--content-->
+      
+      
+  <!--Map script-->  
+  <script>
         function showLocation() {
           if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
@@ -203,16 +196,24 @@
            center: location});
      }
      </script>
-    
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key="AIzaSyC3kOPhc0LobeLZNen0kqZp07NiXa0AVpM&callback=initMap"></script>
-    
-    <div id="footer">
-    <p>Laura Laine &copy;
-    <script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script>
-    </p>
-   </div> <!--footer-->
-      </div> <!--mainpage-->
-  </div> <!--content-->
+      
+  <!--D&D script-->
+                                  
+  <script>
+    function allowDrop(ev) {
+    ev.preventDefault();
+    }
+
+    function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
                                                 
   </body>
 </html>
