@@ -165,6 +165,11 @@
     
     <div id="DROP" ondrop="drop(event)" ondragover="allowDrop(event)">
       <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <img id="drag1" src="Images/pinkheart.png" draggable="true" ondragstart="drag(event)" width="259px" height="194px">
     </div>
      
@@ -213,7 +218,7 @@ function showPosition(position) {
     }
     
     var map = new google.maps.Map(document.getElementById('map'), myOptions);
-    var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+    var marker = new google.maps.Marker({position:latlon,map:map,title:"Position"});
 }
 function showError(error) {
 	var x = document.getElementById('mapError');
