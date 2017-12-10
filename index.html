@@ -53,7 +53,7 @@
             </li>
             <li><a href="#drag">Drag and Drop</a>
             </li>
-            <li><a href="#map">Map</a>
+            <li><a href="#maptitle">Map</a>
             </li>
           </ul> <!--topmenu-->
         </div> <!--menus-->
@@ -167,7 +167,7 @@
 	<img id="dragdrop1" src="Images/pinkheart.png" draggable="true" ondragstart="drag(event)" width="259" height="194">
      
     
-    <h2 id="map">Map</h2>
+    <h2 id="maptitle">Map</h2>
     <p>Click to see where you are!</p>
     <button onclick="getLocation()">Click</button>
     <div id="mapError"></div>
@@ -200,7 +200,7 @@ function showPosition(position) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
     var latlon = new google.maps.LatLng(lat, lon)
-    var mapholder = document.getElementById('mapplace')
+    var mapholder = document.getElementById('map')
     mapholder.style.height = '400px';
     mapholder.style.width = '500px';
     var myOptions = {
@@ -210,7 +210,7 @@ function showPosition(position) {
     navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
     }
     
-    var map = new google.maps.Map(document.getElementById('mapplace'), myOptions);
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
     var marker = new google.maps.Marker({position:latlon,map:map,title:"I know where you live now."});
 }
 function showError(error) {
