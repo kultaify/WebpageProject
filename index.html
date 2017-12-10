@@ -200,7 +200,7 @@ function showPosition(position) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
     var latlon = new google.maps.LatLng(lat, lon)
-    var mapholder = document.getElementById('map')
+    var mapholder = document.getElementById('maptitle')
     mapholder.style.height = '400px';
     mapholder.style.width = '500px';
     var myOptions = {
@@ -210,7 +210,7 @@ function showPosition(position) {
     navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
     }
     
-    var map = new google.maps.Map(document.getElementById('maptitle'), myOptions);
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
     var marker = new google.maps.Marker({position:latlon,map:map,title:"I know where you live now."});
 }
 function showError(error) {
