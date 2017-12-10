@@ -132,14 +132,14 @@ background-color: #FFFFFF;
 text-align:center;
 }
 
-#drag {
+#dragdrop {
     width: 259px;
     height: 194px;
     padding: 10px;
     border: 1px solid #aaaaaa;
 }
 
-#map {
+#mapplace {
 	width:400px;
 	height:400px;
 }
