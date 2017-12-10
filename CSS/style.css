@@ -133,9 +133,19 @@ background-color: #FFFFFF;
 text-align:center;
 }
 
-#drag {
-    width: 350px;
-    height: 70px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
+.drag-cont
+{
+	height: 250px;
+	margin: 50px auto 0;
+	text-align: center;
+}
+
+#DROP
+{
+	width: 200px;
+	height: 67px;
+	padding: 5px;
+	background-color: #FFF;
+	border: 1px solid #000;
+	margin: 20px auto 0px;
 }
